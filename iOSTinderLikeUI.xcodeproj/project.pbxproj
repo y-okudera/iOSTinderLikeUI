@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		B6B1B5E52323AE64008C6B0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B5E42323AE64008C6B0F /* AppDelegate.swift */; };
-		B6B1B5E72323AE64008C6B0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B5E62323AE64008C6B0F /* ViewController.swift */; };
-		B6B1B5EA2323AE64008C6B0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1B5E82323AE64008C6B0F /* Main.storyboard */; };
 		B6B1B5EC2323AE68008C6B0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B1B5EB2323AE68008C6B0F /* Assets.xcassets */; };
 		B6B1B5EF2323AE68008C6B0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1B5ED2323AE68008C6B0F /* LaunchScreen.storyboard */; };
 		B6B1B5FA2323AE68008C6B0F /* iOSTinderLikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B5F92323AE68008C6B0F /* iOSTinderLikeUITests.swift */; };
 		B6B1B6052323AE68008C6B0F /* iOSTinderLikeUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B6042323AE68008C6B0F /* iOSTinderLikeUIUITests.swift */; };
+		B6B1B61623249E88008C6B0F /* Koloda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B1B61423249E88008C6B0F /* Koloda.framework */; };
+		B6B1B61723249E88008C6B0F /* pop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B1B61523249E88008C6B0F /* pop.framework */; };
+		B6B1B62223249FCA008C6B0F /* UIViewController+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B61C23249FCA008C6B0F /* UIViewController+Instantiate.swift */; };
+		B6B1B62323249FCA008C6B0F /* CardPicksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B61D23249FCA008C6B0F /* CardPicksPresenter.swift */; };
+		B6B1B62423249FCA008C6B0F /* CardPicksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B61E23249FCA008C6B0F /* CardPicksRouter.swift */; };
+		B6B1B62523249FCA008C6B0F /* CardPicksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B1B61F23249FCA008C6B0F /* CardPicksViewController.storyboard */; };
+		B6B1B62623249FCA008C6B0F /* CardPicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B62023249FCA008C6B0F /* CardPicksViewController.swift */; };
+		B6B1B62D2324AB30008C6B0F /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B62B2324AB30008C6B0F /* UIAlertController+Extensions.swift */; };
+		B6B1B62E2324AB30008C6B0F /* UIViewController+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B62C2324AB30008C6B0F /* UIViewController+Current.swift */; };
+		B6B1B63C2324AE95008C6B0F /* CardPicksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B1B63B2324AE95008C6B0F /* CardPicksInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +44,6 @@
 /* Begin PBXFileReference section */
 		B6B1B5E12323AE64008C6B0F /* iOSTinderLikeUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTinderLikeUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B1B5E42323AE64008C6B0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6B1B5E62323AE64008C6B0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6B1B5E92323AE64008C6B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6B1B5EB2323AE68008C6B0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6B1B5EE2323AE68008C6B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6B1B5F02323AE68008C6B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +53,16 @@
 		B6B1B6002323AE68008C6B0F /* iOSTinderLikeUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTinderLikeUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B1B6042323AE68008C6B0F /* iOSTinderLikeUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTinderLikeUIUITests.swift; sourceTree = "<group>"; };
 		B6B1B6062323AE68008C6B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B1B61423249E88008C6B0F /* Koloda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Koloda.framework; path = Carthage/Build/iOS/Koloda.framework; sourceTree = "<group>"; };
+		B6B1B61523249E88008C6B0F /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = Carthage/Build/iOS/pop.framework; sourceTree = "<group>"; };
+		B6B1B61C23249FCA008C6B0F /* UIViewController+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Instantiate.swift"; sourceTree = "<group>"; };
+		B6B1B61D23249FCA008C6B0F /* CardPicksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPicksPresenter.swift; sourceTree = "<group>"; };
+		B6B1B61E23249FCA008C6B0F /* CardPicksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPicksRouter.swift; sourceTree = "<group>"; };
+		B6B1B61F23249FCA008C6B0F /* CardPicksViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardPicksViewController.storyboard; sourceTree = "<group>"; };
+		B6B1B62023249FCA008C6B0F /* CardPicksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPicksViewController.swift; sourceTree = "<group>"; };
+		B6B1B62B2324AB30008C6B0F /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		B6B1B62C2324AB30008C6B0F /* UIViewController+Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Current.swift"; sourceTree = "<group>"; };
+		B6B1B63B2324AE95008C6B0F /* CardPicksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPicksInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B1B61623249E88008C6B0F /* Koloda.framework in Frameworks */,
+				B6B1B61723249E88008C6B0F /* pop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +99,7 @@
 				B6B1B5F82323AE68008C6B0F /* iOSTinderLikeUITests */,
 				B6B1B6032323AE68008C6B0F /* iOSTinderLikeUIUITests */,
 				B6B1B5E22323AE64008C6B0F /* Products */,
+				B6B1B61323249E88008C6B0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +116,11 @@
 		B6B1B5E32323AE64008C6B0F /* iOSTinderLikeUI */ = {
 			isa = PBXGroup;
 			children = (
-				B6B1B5E42323AE64008C6B0F /* AppDelegate.swift */,
-				B6B1B5E62323AE64008C6B0F /* ViewController.swift */,
-				B6B1B5E82323AE64008C6B0F /* Main.storyboard */,
-				B6B1B5EB2323AE68008C6B0F /* Assets.xcassets */,
-				B6B1B5ED2323AE68008C6B0F /* LaunchScreen.storyboard */,
-				B6B1B5F02323AE68008C6B0F /* Info.plist */,
+				B6B1B61923249EE8008C6B0F /* Application */,
+				B6B1B6292324A030008C6B0F /* Extensions */,
+				B6B1B61823249EC3008C6B0F /* Modules */,
+				B6B1B61A23249F10008C6B0F /* Resources */,
+				B6B1B6282324A006008C6B0F /* Utilities */,
 			);
 			path = iOSTinderLikeUI;
 			sourceTree = "<group>";
@@ -125,6 +143,78 @@
 			path = iOSTinderLikeUIUITests;
 			sourceTree = "<group>";
 		};
+		B6B1B61323249E88008C6B0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1B61423249E88008C6B0F /* Koloda.framework */,
+				B6B1B61523249E88008C6B0F /* pop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6B1B61823249EC3008C6B0F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1B61B23249F7F008C6B0F /* CardPicks */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B6B1B61923249EE8008C6B0F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1B5E42323AE64008C6B0F /* AppDelegate.swift */,
+				B6B1B5F02323AE68008C6B0F /* Info.plist */,
+				B6B1B5ED2323AE68008C6B0F /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B6B1B61A23249F10008C6B0F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1B5EB2323AE68008C6B0F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6B1B61B23249F7F008C6B0F /* CardPicks */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1B63B2324AE95008C6B0F /* CardPicksInteractor.swift */,
+				B6B1B61D23249FCA008C6B0F /* CardPicksPresenter.swift */,
+				B6B1B61E23249FCA008C6B0F /* CardPicksRouter.swift */,
+				B6B1B61F23249FCA008C6B0F /* CardPicksViewController.storyboard */,
+				B6B1B62023249FCA008C6B0F /* CardPicksViewController.swift */,
+			);
+			path = CardPicks;
+			sourceTree = "<group>";
+		};
+		B6B1B6282324A006008C6B0F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B6B1B6292324A030008C6B0F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1B62A2324A03F008C6B0F /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B6B1B62A2324A03F008C6B0F /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B6B1B62B2324AB30008C6B0F /* UIAlertController+Extensions.swift */,
+				B6B1B62C2324AB30008C6B0F /* UIViewController+Current.swift */,
+				B6B1B61C23249FCA008C6B0F /* UIViewController+Instantiate.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +225,7 @@
 				B6B1B5DD2323AE64008C6B0F /* Sources */,
 				B6B1B5DE2323AE64008C6B0F /* Frameworks */,
 				B6B1B5DF2323AE64008C6B0F /* Resources */,
+				B6B1B61223249E40008C6B0F /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -229,9 +320,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B1B62523249FCA008C6B0F /* CardPicksViewController.storyboard in Resources */,
 				B6B1B5EF2323AE68008C6B0F /* LaunchScreen.storyboard in Resources */,
 				B6B1B5EC2323AE68008C6B0F /* Assets.xcassets in Resources */,
-				B6B1B5EA2323AE64008C6B0F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +342,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B6B1B61223249E40008C6B0F /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Koloda.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/pop.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6B1B5DD2323AE64008C6B0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6B1B5E72323AE64008C6B0F /* ViewController.swift in Sources */,
 				B6B1B5E52323AE64008C6B0F /* AppDelegate.swift in Sources */,
+				B6B1B62223249FCA008C6B0F /* UIViewController+Instantiate.swift in Sources */,
+				B6B1B62423249FCA008C6B0F /* CardPicksRouter.swift in Sources */,
+				B6B1B62323249FCA008C6B0F /* CardPicksPresenter.swift in Sources */,
+				B6B1B62D2324AB30008C6B0F /* UIAlertController+Extensions.swift in Sources */,
+				B6B1B62E2324AB30008C6B0F /* UIViewController+Current.swift in Sources */,
+				B6B1B62623249FCA008C6B0F /* CardPicksViewController.swift in Sources */,
+				B6B1B63C2324AE95008C6B0F /* CardPicksInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +413,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B6B1B5E82323AE64008C6B0F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6B1B5E92323AE64008C6B0F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B6B1B5ED2323AE68008C6B0F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,7 +546,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8PR34D6DP;
-				INFOPLIST_FILE = iOSTinderLikeUI/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/iOSTinderLikeUI/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +569,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8PR34D6DP;
-				INFOPLIST_FILE = iOSTinderLikeUI/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/iOSTinderLikeUI/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
